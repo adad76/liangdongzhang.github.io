@@ -7,116 +7,167 @@
   <title>张良栋｜个人学术主页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-noise" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="返回首页">
-      <span class="brand-mark">LZ</span>
-      <span>张良栋</span>
-    </a>
-    <button class="menu-toggle" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links" aria-label="主导航">
-      <a href="#about">关于我</a>
-      <a href="#research">研究方向</a>
-      <a href="#publications">论文成果</a>
-      <a href="#experience">科研经历</a>
-      <a class="nav-contact" href="mailto:liangdongzhang@mail.sdu.edu.cn">联系我</a>
-    </nav>
+    <div class="header-inner">
+      <a class="brand" href="#top">Liangdong Zhang</a>
+      <button class="menu-toggle" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#about">About</a><a href="#publications">论文成果</a><a href="#experience">科研经历</a><a href="#more">活动与荣誉</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> SHANDONG UNIVERSITY · MECHANICAL ENGINEERING</p>
-        <h1>以物理为先验，<br>让智能模型<span>理解制造。</span></h1>
-        <p class="hero-intro">你好，我是张良栋，山东大学机械工程硕士研究生。我的研究聚焦于物理信息深度学习、精密磨削与加工动力学，探索数据与机理协同驱动的智能制造方法。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#publications">查看研究成果 <span>↗</span></a>
-          <a class="button button-ghost" href="mailto:liangdongzhang@mail.sdu.edu.cn">邮件联系</a>
+  <main id="top" class="page-layout">
+    <aside class="profile-card">
+      <div class="avatar"><img src="assets/profile-photo.jpg" alt="张良栋证件照"></div>
+      <h1>张良栋</h1><p class="english-name">Liangdong Zhang</p>
+      <p class="position">机械工程硕士研究生</p>
+      <p class="affiliation">山东大学 · 机械工程学院</p>
+      <div class="profile-links">
+        <a class="email-link" href="mailto:liangdongzhangme@outlook.com">✉ liangdongzhangme@outlook.com</a>
+        <a href="tel:+8615725213006">☎ (+86) 157-2521-3006</a>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+      <section id="about" class="intro section-block reveal">
+        <p class="kicker">WELCOME TO MY ACADEMIC HOMEPAGE</p>
+        <h2>Prospective PhD Applicant <em>for Fall 2027</em></h2>
+        <p class="about-copy">我是张良栋，计划申请 2027 年秋季入学的博士项目。我的研究兴趣集中于物理信息深度学习、物理—数据混合驱动建模、加工动力学及多源信息融合监测。目前，我在山东大学攻读机械工程硕士学位，师从马海峰教授，预计于 2027 年毕业。硕士阶段曾获国家奖学金（前 3%）、学院先进成果奖（年级第 1 名）及山东大学研究生一等学业奖学金。</p>
+
+        <div class="quick-facts"><div class="published-fact"><strong>2</strong><span>篇已发表论文</span><small>均为第一作者 · IF 11.4 / 4.2</small></div><div><strong>2</strong><span>篇在修论文</span></div><div><strong>4</strong><span>项发明专利</span></div><div><strong>5</strong><span>项国家级奖项</span></div><div><strong>30+</strong><span>项省级奖项</span></div></div>
+      </section>
+
+
+      <section id="publications" class="section-block reveal">
+        <div class="section-heading"><span>01</span><h2>论文成果</h2><small>PUBLICATIONS</small></div>
+        <div class="publication-cards">
+          <article class="publication-card">
+            <figure class="publication-visual"><img src="assets/publications/grinding-graphical-abstract.png" alt="物理信息混合磨削力模型图形摘要"></figure>
+            <div class="publication-info">
+              <h3>A physics-informed hybrid model for grinding force prediction</h3>
+              <p class="publication-authors"><b>Zhang L</b>, Ma H, He Z, Wang H, Chen J, Song Q, Liu Z</p>
+              <p class="publication-journal">International Journal of Mechanical Sciences, 2026 · JCR Q1 · CAS Q1 Top · IF 11.4</p>
+              <div class="publication-actions"><span class="author-role">第一作者 · First Author</span><a href="assets/grinding-force-paper.pdf" target="_blank">PDF</a><a href="https://doi.org/10.1016/j.ijmecsci.2026.111451" target="_blank" rel="noreferrer">DOI ↗</a></div>
+            </div>
+          </article>
+          <article class="publication-card">
+            <figure class="publication-visual"><img src="assets/publications/blind-guiding-robot.png" alt="基于速度自适应与视觉识别的智能导盲机器人系统图" loading="lazy" decoding="async"></figure>
+            <div class="publication-info">
+              <h3>Design of Blind Guiding Robot Based on Speed Adaptation and Visual Recognition</h3>
+              <p class="publication-authors"><b>Zhang L</b>, Jia K, Liu J, Wang G, Huang W</p>
+              <p class="publication-journal">IEEE Access, 2023 · JCR Q2 · CAS Q3 · IF 4.2</p>
+              <div class="publication-actions"><span class="author-role">第一作者 · First Author</span><a href="https://doi.org/10.1109/ACCESS.2023.3296066" target="_blank" rel="noreferrer">DOI ↗</a></div>
+            </div>
+          </article>
+          <article class="publication-card">
+            <figure class="publication-visual publication-topic-visual" aria-label="刀具磨损预测双通道回归框架主题图">
+              <div><small>TOOL WEAR PREDICTION</small><strong>Local–Global Features</strong><span>Dual-Channel Regression</span></div>
+            </figure>
+            <div class="publication-info">
+              <h3>A local-global feature based dual-channel regression framework for tool wear prediction under varied milling conditions</h3>
+              <p class="publication-authors">Sun X<sup>†</sup>, <b>Zhang L</b><sup>†</sup>, Ma H*, Wang Bo, Zhang Z, Song Q, Liu Z</p>
+              <p class="publication-journal">Measurement, 2026 · JCR Q1 · CAS Q2 · IF 6.1</p>
+              <div class="publication-actions"><span class="review">† 共同一作 · Co-first authors</span><span class="review">大修 · Major Revision</span></div>
+            </div>
+          </article>
+          <article class="publication-card">
+            <figure class="publication-visual"><img src="assets/publications/conical-shell-identification.png" alt="基于顺序损失激活的圆锥壳边界条件辨识框架" loading="lazy" decoding="async"></figure>
+            <div class="publication-info">
+              <h3>Boundary conditions identification of conical shells using dynamic loss triggered physics-informed neural networks</h3>
+              <p class="publication-authors">He Z, Ma H, Chen J, Han G, <b>Zhang L</b>, Song Q, Liu Z</p>
+              <p class="publication-journal">Mechanical Systems and Signal Processing, 2026 · JCR Q1 · CAS Q1 Top · IF 10.2</p>
+              <div class="publication-actions"><span class="review">大修 · Major Revision</span></div>
+            </div>
+          </article>
         </div>
-      </div>
-      <div class="hero-visual reveal" aria-label="张良栋姓名图形">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="portrait-placeholder"><span>良栋</span><small>LIANGDONG<br>ZHANG</small></div>
-        <div class="hero-tag tag-one">Physics-informed AI</div>
-        <div class="hero-tag tag-two">Grinding Dynamics</div>
-      </div>
-      <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
-    </section>
+      </section>
 
-    <section id="about" class="about section-shell section-pad">
-      <div class="section-label reveal"><span>01</span> 关于我</div>
-      <div class="about-grid">
-        <h2 class="section-title reveal">在制造机理与<br><em>人工智能</em>的交汇处</h2>
-        <div class="about-content reveal">
-          <p>目前就读于山东大学机械工程学院，攻读机械工程硕士学位。我关心一个核心问题：如何将真实的物理规律嵌入学习模型，使预测不仅更准确，也更可信、更可解释。</p>
-          <p>围绕精密磨削、颤振稳定性和结构动力学，我开展了物理—数据混合建模、多源振动感知及物理信息神经网络等研究。</p>
-          <div class="stats">
-            <div><strong>2</strong><span>篇已发表论文</span></div>
-            <div><strong>3</strong><span>项发明专利</span></div>
-            <div><strong>5</strong><span>项科研经历</span></div>
-            <div><strong>7.0</strong><span>IELTS</span></div>
-          </div>
+      <section id="patents" class="section-block reveal">
+        <div class="section-heading"><span>02</span><h2>发明专利</h2><small>PATENTS</small></div>
+        <div class="compact-list">
+          <article><div><h3>一种基于物理信息混合建模的磨削力预测方法及系统</h3><p>CN121580861A · 马海涛，<b>张良栋</b>，陈俊杰，宋清华，刘战强</p></div><span>实质审查</span></article>
+          <article><div><h3>一种自动装卸立体仓储系统及其工作方法</h3><p>CN202411715157.2 · 万熠，郑凯，刘洋，刘硕，<b>张良栋</b>，等</p></div><span class="done">已授权</span></article>
+          <article><div><h3>一种可拼接式 AGV 运输底盘及其工作方法</h3><p>CN202510103872.9 · 万熠，刘洋，侯俊，郑凯，沈文，<b>张良栋</b>，等</p></div><span class="done">已授权</span></article>
+          <article><div><h3>一种持续供电与防坠落的高空壁面清洁系统及其应用</h3><p>CN202211449890.5 · 杨扬，解博文，曾庆良，刘永宾，张瑶，杜顺义，荀琪凯，陈世栋，<b>张良栋</b></p></div><span>实质审查</span></article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="research" class="research section-pad">
-      <div class="section-shell">
-        <div class="section-label light reveal"><span>02</span> 研究方向</div>
-        <div class="research-head reveal"><h2 class="section-title light">我正在探索的<br>问题领域</h2><p>从加工过程的物理本质出发，结合深度学习与多源传感，构建可解释、可迁移的智能模型。</p></div>
-        <div class="research-grid">
-          <article class="research-card reveal"><span class="card-index">01</span><div class="card-icon">φ</div><h3>物理信息深度学习</h3><p>将控制方程、边界条件与机理先验嵌入神经网络，提升小样本场景下的精度与可解释性。</p><div class="card-line"></div></article>
-          <article class="research-card reveal"><span class="card-index">02</span><div class="card-icon">⌁</div><h3>精密磨削与加工动力学</h3><p>研究砂轮形貌、磨粒磨损及材料去除机制，建立面向复杂磨削过程的混合预测模型。</p><div class="card-line"></div></article>
-          <article class="research-card reveal"><span class="card-index">03</span><div class="card-icon">≋</div><h3>颤振监测与稳定性预测</h3><p>融合动态频带追踪、信号分解与在线边界更新，实现加工颤振的实时识别与稳定性评估。</p><div class="card-line"></div></article>
-          <article class="research-card reveal"><span class="card-index">04</span><div class="card-icon">⋈</div><h3>多传感器过程监测</h3><p>通过多源振动信号的感知、融合与因果分析，揭示颤振传播路径和过程状态演变。</p><div class="card-line"></div></article>
+      <section id="experience" class="section-block reveal">
+        <div class="section-heading"><span>03</span><h2>科研经历</h2><small>RESEARCH EXPERIENCE</small></div>
+        <div class="project-list">
+          <article><time>2026.01 — 至今</time><h3>多源振动信号驱动的自适应磨削颤振稳定性监测</h3><p class="project-role">山东省重点研发计划 · 研究生科研成员</p><ul><li>结合 VMD 特征分解、动态频带追踪与在线决策边界更新，开发磨削颤振稳定性监测方法。</li><li>开展多源振动信号感知、融合与因果分析，揭示颤振传播路径。</li></ul></article>
+          <article class="project-with-gallery"><time>2024.09 — 2026.02</time><h3>薄壁陶瓷构件高稳定性磨削控制研究</h3><p class="project-role">山东省重点研发计划 · 研究生科研成员</p><ul><li>融合砂轮形貌、磨粒磨损、未变形切屑厚度及多阶段材料去除机理，建立物理信息磨削力模型。</li><li>构建混合物理—数据损失和双注意力机制 PINN 框架。</li></ul>
+            <figure class="project-slide">
+              <a href="assets/projects/grinding-project-page-14-complete-v3.png" target="_blank" aria-label="查看磨削力建模项目第 14 页完整大图"><img src="assets/projects/grinding-project-page-14-complete-v3.png" alt="薄壁陶瓷构件高稳定性磨削控制研究项目介绍，来自作品集第 14 页" loading="lazy" decoding="async"></a>
+            </figure>
+          </article>
+          <article class="project-with-gallery"><time>2024.09 — 2026.02</time><h3>变工况铣削刀具磨损预测研究</h3><p class="project-role">山东省重点研发计划 · 研究助理 · 导师：马海峰教授</p><ul><li>提出融合多尺度卷积、BiLSTM 与多头注意力的双通道回归框架，联合建模局部磨损波动与长期磨损演化。</li><li>基于加权采样构建面向刀具全生命周期的优化策略，提升预测稳定性及模型对磨损后期的敏感性。</li><li>在 HMoTP 和 PHM2010 数据集上的平均 RMSE 分别为 5.26 μm 和 2.98 μm，相较现有模型预测误差降低约 34.3%。</li></ul>
+            <figure class="project-slide">
+              <a href="assets/projects/tool-wear-project-slide-16-hd.png" target="_blank" aria-label="查看作品 PPT 第 16 页高清大图"><img src="assets/projects/tool-wear-project-slide-16-hd.png" alt="作品 PPT 第 16 页高清截图" loading="lazy" decoding="async"></a>
+            </figure>
+          </article>
+          <article class="project-with-gallery"><time>2022.03 — 2023.07</time><h3>基于速度适应与视觉识别的智能导盲机器人</h3><p class="project-role">国家级大学生创新创业训练计划 · 本科生科研成员</p><ul><li>设计轮足式导盲机器人系统，基于卡尔曼滤波与串级 PID 实现人机速度自适应控制。</li><li>利用迁移学习优化 YOLOv5 视觉识别模块，实现交通信号检测与多模态人机交互。</li></ul>
+            <div class="project-slides-two" tabindex="0" aria-label="智能导盲机器人项目作品集第 15 页和第 16 页，可横向滚动">
+              <a href="assets/projects/guide-project-page-15-ppt-v8.png" target="_blank" aria-label="查看智能导盲机器人项目第 15 页大图"><img src="assets/projects/guide-project-page-15-ppt-v8.png" alt="智能导盲机器人项目介绍第 15 页" loading="lazy" decoding="async"></a>
+              <a href="assets/projects/guide-project-page-16-complete-v3.png" target="_blank" aria-label="查看智能导盲机器人项目第 16 页大图"><img src="assets/projects/guide-project-page-16-complete-v3.png" alt="智能导盲机器人项目介绍第 16 页" loading="lazy" decoding="async"></a>
+            </div>
+          </article>
+          <article class="project-with-gallery"><time>2021.12 — 2023.12</time><h3>高层玻璃幕墙智能清洁机器人</h3><p class="project-role">国家级大学生创新创业训练计划 · 本科生科研成员</p><ul><li>设计太阳能高空清洁机器人，集成负压吸附、阻尼滚筒清洁与防坠保护机构。</li><li>融合双目相机与激光传感器，实现表面分类、清洁区域定位及自主决策。</li></ul>
+            <div class="project-slides-two" tabindex="0" aria-label="高层玻璃幕墙智能清洁机器人项目作品集第 17 页和第 18 页，可横向滚动">
+              <a href="assets/projects/cleaning-project-page-17-ppt-v9.png" target="_blank" aria-label="查看高层玻璃幕墙智能清洁机器人项目第 17 页大图"><img src="assets/projects/cleaning-project-page-17-ppt-v9.png" alt="高层玻璃幕墙智能清洁机器人项目介绍第 17 页" loading="lazy" decoding="async"></a>
+              <a href="assets/projects/cleaning-project-page-18-ppt-v8.png" target="_blank" aria-label="查看高层玻璃幕墙智能清洁机器人项目第 18 页大图"><img src="assets/projects/cleaning-project-page-18-ppt-v8.png" alt="高层玻璃幕墙智能清洁机器人项目介绍第 18 页" loading="lazy" decoding="async"></a>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="publications" class="publications section-shell section-pad">
-      <div class="section-label reveal"><span>03</span> 代表性论文</div>
-      <div class="pub-heading reveal"><h2 class="section-title">研究成果</h2><p>聚焦物理信息建模、智能制造与机器人系统。</p></div>
-      <div class="pub-list">
-        <a class="pub-item reveal" href="https://doi.org/10.1016/j.ijmecsci.2026.111451" target="_blank" rel="noreferrer"><span class="pub-year">2026</span><div><p class="pub-meta">INTERNATIONAL JOURNAL OF MECHANICAL SCIENCES · Q1 TOP</p><h3>A physics-informed hybrid model for grinding force prediction</h3><p>Zhang L, Ma H, He Z, Wang H, Chen J, Song Q, Liu Z</p></div><span class="pub-arrow">↗</span></a>
-        <a class="pub-item reveal" href="https://doi.org/10.1109/ACCESS.2023.3296066" target="_blank" rel="noreferrer"><span class="pub-year">2023</span><div><p class="pub-meta">IEEE ACCESS</p><h3>Design of Blind Guiding Robot Based on Speed Adaptation and Visual Recognition</h3><p>Zhang L, Jia K, Liu J, Wang G, Huang W</p></div><span class="pub-arrow">↗</span></a>
-        <article class="pub-item reveal"><span class="pub-year">2026</span><div><p class="pub-meta">MECHANICAL SYSTEMS AND SIGNAL PROCESSING · UNDER REVIEW</p><h3>Boundary conditions identification of conical shells using dynamic loss triggered physics-informed neural networks</h3><p>He Z, Ma H, Chen J, Han G, Zhang L, Song Q, Liu Z</p></div><span class="status">审稿中</span></article>
-      </div>
-    </section>
-
-    <section id="experience" class="experience section-pad">
-      <div class="section-shell">
-        <div class="section-label reveal"><span>04</span> 科研经历</div>
-        <div class="experience-layout">
-          <div class="experience-intro reveal"><h2 class="section-title">从理论走向<br>真实场景</h2><p>持续参与国家级与省级科研项目，把算法、机械系统与实验验证连接起来。</p></div>
-          <div class="timeline">
-            <article class="timeline-item reveal"><div class="time">2026.01 — 至今</div><div><h3>多源振动信号驱动的自适应磨削颤振稳定性监测</h3><p>山东省重点研发计划 · 研究生科研成员</p></div></article>
-            <article class="timeline-item reveal"><div class="time">2024.09 — 2026.02</div><div><h3>薄壁陶瓷构件高稳定性磨削控制研究</h3><p>山东省重点研发计划 · 研究生科研成员</p></div></article>
-            <article class="timeline-item reveal"><div class="time">2025.04 — 2026.04</div><div><h3>圆锥壳结构物理信息边界条件辨识</h3><p>山东省重点研发计划 · 研究助理</p></div></article>
-            <article class="timeline-item reveal"><div class="time">2022.03 — 2023.07</div><div><h3>基于速度适应与视觉识别的智能导盲机器人</h3><p>国家级大学生创新创业训练计划 · 本科生科研成员</p></div></article>
-            <article class="timeline-item reveal"><div class="time">2021.12 — 2023.12</div><div><h3>高层玻璃幕墙智能清洁机器人</h3><p>国家级大学生创新创业训练计划 · 本科生科研成员</p></div></article>
-          </div>
+      <section id="more" class="section-block reveal">
+        <div class="section-heading"><span>04</span><h2>活动与荣誉</h2><small>ACTIVITIES &amp; AWARDS</small></div>
+        <div class="honors-groups">
+          <section class="honors-group" aria-labelledby="national-awards-title">
+            <h3 id="national-awards-title">National-Level Awards <small>国家级奖项</small></h3>
+            <ul class="honors-list">
+              <li><p><strong>Chinese National Scholarship</strong> <b>(Top 3%)</b></p><time>2026</time></li>
+              <li><p><strong>National First Prize</strong>, the 21st “RoboMaster” National University Robot Competition <b>(Top 5%)</b></p><time>Aug. 2022</time></li>
+              <li><p><strong>National First Prize</strong>, the 2023 Chinese College Students' Mechanical Engineering Innovation and Creativity Competition <b>(Top 8%)</b></p><time>Aug. 2023</time></li>
+              <li><p><strong>National First Prize</strong>, Sentry Robot Practical Competition, National University Robot Competition</p><time>Aug. 2022</time></li>
+              <li><p><strong>National First Prize</strong>, Hero Robot Practical Competition, National University Robot Competition</p><time>Aug. 2022</time></li>
+            </ul>
+          </section>
+          <section class="honors-group" aria-labelledby="provincial-awards-title">
+            <h3 id="provincial-awards-title">Provincial-Level Awards &amp; Scholarships <small>省级奖项与奖学金</small></h3>
+            <ul class="honors-list">
+              <li><p><strong>Provincial Grand Prize</strong>, the 18th National 3D Digital Innovation Design Competition <b>(Top 3%)</b></p><time>Jun. 2026</time></li>
+              <li><p><strong>Provincial First Prize</strong>, the 18th “Challenge Cup” Shandong Provincial College Students’ Extracurricular Academic Science and Technology Works Competition</p><time>Jul. 2023</time></li>
+              <li><p><strong>Provincial First Prize</strong>, the 6th Shandong Provincial Intelligent Control Competition</p><time>Nov. 2022</time></li>
+              <li><p><strong>First Prize (4th Place)</strong>, Eastern Division, RoboMaster University Championship</p><time>Jun. 2022</time></li>
+              <li><p><strong>First Prize</strong>, the 6th Shandong Provincial Intelligent Control Competition</p><time>Nov. 2022</time></li>
+              <li><p><strong>First Prize</strong>, Shandong Provincial College Student Intelligent Manufacturing Competition</p><time>Oct. 2022</time></li>
+              <li><p><strong>First Prize</strong>, Shandong Provincial Electromechanical Product Innovation Design Competition</p><time>Aug. 2023</time></li>
+              <li><p><strong>Second Prize</strong>, National University Business Elite Challenge - Shandong Division</p><time>Aug. 2023</time></li>
+              <li><p><strong>Second Prize</strong>, Shandong Provincial College Student Advanced Engineering Drawing Technology and Product Information Modeling Competition</p><time>Jul. 2023</time></li>
+              <li><p><strong>Second Prize</strong>, Shandong Provincial Advanced Engineering Drawing Competition</p><time>Jul. 2023</time></li>
+              <li><p><strong>Second Prize</strong>, 9th Shandong Provincial College Student Science and Technology Innovation Competition</p><time>Mar. 2023</time></li>
+              <li><p><strong>Third Prize</strong>, Shandong Provincial Efficient and Intelligent Robot Innovation Competition</p><time>Aug. 2023</time></li>
+              <li><p><strong>Third Prize</strong>, Shandong Provincial Maker Competition</p><time>Nov. 2021</time></li>
+              <li><p>Hairong Corporate Scholarship <b>(Top 5%)</b></p><time>Sep. 2021</time></li>
+              <li><p>First-Class Academic Scholarship, Shandong University of Science and Technology <b>(Top 5%)</b></p><time>Sep. 2022</time></li>
+            </ul>
+          </section>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="education section-shell section-pad">
-      <div class="section-label reveal"><span>05</span> 教育与荣誉</div>
-      <div class="edu-grid">
-        <div class="edu-column reveal"><h2 class="minor-title">教育经历</h2><article><span>2024 — 至今</span><h3>山东大学</h3><p>机械工程学院 · 机械工程硕士</p><small>平均成绩 85.65 / 100</small></article><article><span>2020 — 2024</span><h3>山东科技大学</h3><p>机电工程学院 · 智能制造工程学士</p><small>平均成绩 87.70 / 100</small></article></div>
-        <div class="award-column reveal"><h2 class="minor-title">部分荣誉</h2><ul><li><span>2023</span>中国大学生机械工程创新创意大赛全国一等奖</li><li><span>2022</span>全国大学生机器人大赛 RoboMaster 全国一等奖</li><li><span>2022</span>RoboMaster 哨兵机器人实战赛全国一等奖</li><li><span>2023</span>“挑战杯”山东省大学生课外学术科技作品竞赛省一等奖</li><li><span>2026</span>全国三维数字化创新设计大赛精英联赛省特等奖</li></ul></div>
-      </div>
-    </section>
-
-    <section class="contact section-shell reveal">
-      <p>LET'S CONNECT</p><h2>期待与你讨论<br><em>研究与合作。</em></h2><a href="mailto:liangdongzhang@mail.sdu.edu.cn">liangdongzhang@mail.sdu.edu.cn <span>↗</span></a>
-    </section>
+      <section class="contact-block reveal"><p>欢迎就研究、合作与学术交流与我联系。</p><a href="mailto:liangdongzhangme@outlook.com">liangdongzhangme@outlook.com →</a></section>
+    </div>
   </main>
-
-  <footer><div class="section-shell"><span>© <span id="year"></span> 张良栋</span><span>山东大学 · 济南</span><a href="#top">回到顶部 ↑</a></div></footer>
+  <footer><span>© <span id="year"></span> 张良栋</span><span>Last updated: July 2026</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
