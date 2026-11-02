@@ -51,3 +51,6 @@
 .publication-topic-visual span{font-family:Georgia,"Times New Roman",serif;font-size:14px;color:#365d7d}
 .publication-authors sup{color:var(--brown);font-size:10px;font-weight:700}
 @media(max-width:850px) and (min-width:561px){.quick-facts{grid-template-columns:repeat(3,1fr)}}
+
+/* Unified typeface across the entire academic homepage. */
+html,body,body *{font-family:"Times New Roman",Times,serif!important}
