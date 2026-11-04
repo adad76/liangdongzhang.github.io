@@ -59,4 +59,4 @@ html,body,body *{font-family:"Times New Roman",Times,serif!important}
 .avatar{height:auto;aspect-ratio:3/4;border-radius:4px}
 .avatar img{object-position:center}
 .profile-links .email-link,.contact-block a{font-weight:700}
-.affiliation{font-weight:700}
+.affiliation{font-size:inherit;color:var(--ink);font-weight:600}
