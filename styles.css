@@ -60,3 +60,7 @@ html,body,body *{font-family:"Times New Roman",Times,serif!important}
 .avatar img{object-position:center}
 .profile-links .email-link,.contact-block a{font-weight:700}
 .affiliation{font-size:inherit;color:var(--ink);font-weight:600}
+.research-interests{margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}
+.research-interests h3{display:flex;align-items:center;gap:12px;margin:0 0 8px;color:var(--sdu-blue);font-size:18px;text-transform:uppercase;letter-spacing:.04em}
+.research-interests h3::after{content:"";height:2px;background:var(--ink);flex:1}
+.research-interests p{margin:0;color:var(--ink);font-size:16px;line-height:1.75}
